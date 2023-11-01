@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini Calculator</h1>
+        <p>*For mini calculations*</p>
+    </header>
+    <div class="container">
+        <div class="screen">
+            <input type="text" readonly id="currentInput"> <br>
+            <input type="text" readonly id="result">
+        </div>
+        <div class="keys">
+            <div class="row">
+                <button onclick="clean()" id="clear">C</button>
+                <button onclick="backspace()" id="backspace">&larr;</button>
+                <button onclick="display('**')" id="plus-minus">^</button>
+                <button onclick="display('/')" id="division">&#xF7;</button>
+            </div>
+            <div class="row">
+                <button onclick="display('7')" class="num" id="seven">7</button>
+                <button onclick="display('8')" class="num" id="eight">8</button>
+                <button onclick="display('9')" class="num" id="nine">9</button>
+                <button onclick="display('*')" id="multiplication">&#xd7;</button>
+            </div>
+            <div class="row">
+                <button onclick="display('4')" class="num" id="four">4</button>
+                <button onclick="display('5')" class="num" id="five">5</button>
+                <button onclick="display('6')" class="num" id="six">6</button>
+                <button onclick="display('-')" id="subtraction">-</button>
+            </div>
+            <div class="row">
+                <button onclick="display('1')" class="num" id="one">1</button>
+                <button onclick="display('2')" class="num" id="2">2</button>
+                <button onclick="display('3')" class="num" id="3">3</button>            
+                <button onclick="display('+')" id="addition">+</button>
+            </div>
+            
+            <div class="row">
+                <button onclick="display('%')" id="percent">%</button>
+                <button onclick="display('0')" class="num" id="zero">0</button>
+                <button onclick="display('.')" id="decimal">.</button>
+                <button onclick="equals()" id="equals">=</button>
+            </div>                 
+        </div>
+    </div>
+    <footer>
+        ~Made by Soumili
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

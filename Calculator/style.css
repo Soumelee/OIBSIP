@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    font: inherit;
+    color: inherit;
+    background: rgba(92, 92, 92, 0.133);
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.409);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    width: 280px;
+}
+.screen input{
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    
+    color: inherit;
+    width: 100%;    
+
+    text-align: right;
+}
+#currentInput{
+    font-weight: bold;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(#f262e5, #3c63f2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#result{
+    font-size: 1.2rem;
+}
+.screen{
+    margin-bottom: 1rem;
+}
+.num, #percent,#decimal{
+    background-color: transparent;
+}
+.row{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+#equals{
+    background: linear-gradient(90deg, #f262e5 0%, #3c63f2 100%);
+}
+#clear{
+    color: #bd62f2;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size: 0.7rem;   
+}
+header, footer{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.3rem;
+    border-radius: 1rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    font-size: 0.7rem;
+    text-align: center;
+}
+

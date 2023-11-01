@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Temperature converter</h1>
+    </header>
+    <div class="container">
+        <label for="userInput">
+            <h2>Enter the<span class="gold"> Temperature: </span></h2>
+        </label><br />
+        <div>
+            <select id="selectUserInput">
+                <option selected value="C">Degree Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <input type="number" id="userInput"/>
+            
+            <!-- <button onclick='calculate()'>
+                <span class="material-symbols-outlined custom"> calculate </span>
+            </button> -->
+            <span class="material-symbols-outlined custom"> calculate </span>
+
+            <select id="selectResult">
+                <option value="C">Degree Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option selected value="K">Kelvin</option>
+            </select>            
+            <input type="text" id="result" readonly placeholder="Result will be displayed here"/>
+            
+            
+        </div>
+    </div>
+    <footer>~Created by Soumili Mondal</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

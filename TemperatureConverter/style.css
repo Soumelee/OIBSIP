@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'JetBrains Mono', monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(15, 9, 19);
+    color: rgb(239, 237, 239);
+}
+.container{
+    background: linear-gradient(156deg, rgba(239, 237, 239, 0.04) 0%, rgba(0, 0, 0, 0.04) 92.3%);
+    border: 1px solid rgb(210, 184, 99);
+    border-radius: 24px;
+    padding: 3rem;
+}
+.container div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+
+h1{
+    font-size: 3rem;
+    transition: 0.5s;
+    text-align: center;
+}
+h1:hover{
+    text-shadow: #ec883780 1px 1px 5px, #faf173bb 0px 0px 10px;
+    cursor: crosshair;
+}
+input{
+    border: 1px solid rgba(236, 67, 55, 0.829);
+    outline: none;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: linear-gradient(156deg, rgba(239, 237, 239, 0.04) 0%, rgba(0, 0, 0, 0.04) 92.3%);
+    backdrop-filter: blur(5px);
+    color: inherit;
+    /* box-shadow: 0px 0px 5px 1px rgba(51,182,216,0.7); */
+    font-family: inherit;
+}
+.material-symbols-outlined{
+    text-align: center;
+}
+.custom{
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(rgb(236, 66, 55), rgb(51, 182, 216));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gold{
+    color: rgb(210, 184, 99);
+}
+select{
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    outline: none;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+select:hover{
+    box-shadow: 0px 0px 5px 1px rgba(51,182,216,0.7);
+    cursor: pointer;
+}
+select option{
+    color: black;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 630px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .container{
+        padding: 1.5rem;
+    }
+}
+footer{
+    text-align: center;
+}
+/* button{
+    background-color: transparent;
+    width: max-content;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+} */
